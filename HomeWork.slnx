@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="../HomeWork/HomeWork.Database/HomeWork.Database.csproj" Id="33a84b82-251b-43cf-b37b-76d2ad4c1c00" />
+  <Project Path="HomeWork.ConsoleApp4/HomeWork.ConsoleApp.csproj" Id="b3320063-c6de-48cd-95bd-a60d71673455" />
+  <Project Path="HomeWork.Domain/HomeWork.Domain.csproj" />
+</Solution>
