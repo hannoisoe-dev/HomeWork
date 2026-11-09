@@ -18,16 +18,16 @@ BlogService blog = new BlogService();
 
 //BlogCreateResponse result=blog.createBlog(new BlogCreateRequest
 //{
-//    Title = "Fighting",
-//    Author = "Hns",
-//    Content = "Fighting...."
+//    BlogTitle = "Fighting",
+//    BlogAuthor = "Hns",
+//    BlogContent = "Fighting...."
 //});
 //Console.WriteLine( result.IsSuccess +" " + result.Message);
 
 
 //blog.updateBlog(new BlogCreateRequest
 //{
-//    Author = "haha"
+//    BlogAuthor = "haha"
 //}, 29);
 
 
@@ -51,16 +51,16 @@ BlogAdoDotNetService service = new BlogAdoDotNetService();
 
 //BlogCreateResponse result=service.createBlog(new BlogCreateRequest
 //{
-//    Title = "November",
-//    Author = "HNS",
-//    Content = "Winter is coming"
+//    BlogTitle = "November",
+//    BlogAuthor = "HNS",
+//    BlogContent = "Winter is coming"
 //});
 //Console.WriteLine(result.IsSuccess + " " + result.Message);
 
 
 //int result=service.updateBlog(30, new BlogCreateRequest
 //{
-//    Title = "Game of Throne"
+//    BlogTitle = "Game of Throne"
 //});
 //if(result > 0)
 //{
@@ -72,3 +72,42 @@ BlogAdoDotNetService service = new BlogAdoDotNetService();
 //{
 //    Console.WriteLine("Deleted!");
 //}
+
+BlogDapperService dapperService = new BlogDapperService();
+//var lst=dapperService.GetBlogs();
+//foreach(var item in lst)
+//{
+//    Console.WriteLine(item.BlogTitle);
+//}
+
+//BlogModel lst =dapperService.GetBlog(3);
+//Console.WriteLine(lst.BlogTitle);
+
+//int result=dapperService.CreateBlog(new BlogCreateRequest
+//{
+//    BlogTitle = "Ghost",
+//    BlogAuthor = "TarTay",
+//    BlogContent = "Ghosting..."
+//});
+//if(result > 0)
+//{
+//    Console.WriteLine("Created!");
+//}
+
+
+//int result=dapperService.UpdateBlog(2,new BlogCreateRequest
+//{
+//    BlogTitle = "New Testing",
+//    BlogContent = "New Testing"
+
+//});
+//if(result > 0)
+//{
+//    Console.WriteLine("Updated!");
+//}
+
+int result=dapperService.DeleteBlog(2);
+if(result > 0)
+{
+    Console.WriteLine("Deleted!");
+}
