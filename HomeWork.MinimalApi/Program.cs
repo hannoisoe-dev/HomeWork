@@ -8,6 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<BlogService>();
+builder.Services.AddScoped<BlogAdoDotNetService>();
 
 var app = builder.Build();
 
@@ -42,7 +43,8 @@ app.UseHttpsRedirection();
 
 
 
-app.UseBlogService();
+//app.UseBlogService();
+app.UseBlogAdoDotNetService();
 
 app.Run();
 
